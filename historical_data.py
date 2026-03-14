@@ -1,0 +1,480 @@
+# Historical data extracted from Q1-Q5 Excel reports
+# Each quarter keyed by "Q1" through "Q5"
+
+HISTORICAL_DATA = {
+    "Q1": {
+        "year": 2017, "quarter": 2,
+        "prices": {
+            "p1": {"ue": 295, "nafta": 295, "internet": 295},
+            "p2": {"ue": 425, "nafta": 417, "internet": 417},
+            "p3": {"ue": 815, "nafta": 816, "internet": 815},
+        },
+        "deliveries_requested": {
+            "p1": {"ue": 1740, "nafta": 1270, "internet": 1620},
+            "p2": {"ue": 1010, "nafta": 900, "internet": 1000},
+            "p3": {"ue": 420, "nafta": 220, "internet": 370},
+        },
+        "deliveries_actual": {
+            "p1": {"ue": 1740, "nafta": 1270, "internet": 1620},
+            "p2": {"ue": 1010, "nafta": 900, "internet": 1000},
+            "p3": {"ue": 420, "nafta": 220, "internet": 370},
+        },
+        "orders": {
+            "p1": {"ue": 1695, "nafta": 1307, "internet": 1610},
+            "p2": {"ue": 1015, "nafta": 766, "internet": 992},
+            "p3": {"ue": 363, "nafta": 284, "internet": 363},
+        },
+        "sales": {
+            "p1": {"ue": 1739, "nafta": 1270, "internet": 1610},
+            "p2": {"ue": 1015, "nafta": 868, "internet": 992},
+            "p3": {"ue": 416, "nafta": 284, "internet": 363},
+        },
+        "production": {
+            "p1": {"ordered": 4630, "produced": 4791, "rejected": 161, "lost": 0},
+            "p2": {"ordered": 2910, "produced": 3018, "rejected": 108, "lost": 0},
+            "p3": {"ordered": 1010, "produced": 1044, "rejected": 34, "lost": 0},
+        },
+        "machines": {"available": 20, "next_quarter": 20},
+        "assembly": {
+            "hours_available": 25872, "absenteeism": 348, "hours_used": 24489,
+            "assembly_times": {"p1": 120, "p2": 169, "p3": 368},
+        },
+        "machining": {
+            "hours_available": 11760, "downtime": 46, "hours_used": 11290,
+            "maintenance_hours": 554, "efficiency_pct": 94.3,
+        },
+        "raw_material": {
+            "initial_inventory": 698, "purchased_current": 14000,
+            "purchased_emergency": 0, "lost": 66, "used": 13959, "final_inventory": 673,
+        },
+        "hr": {
+            "specialized": {"start": 44, "recruited": 0, "trained": 9, "fired": 0, "quit": 0, "available_next": 53},
+            "non_specialized": {"start": 74, "recruited": 6, "fired": 0, "quit": 6, "available_next": 74},
+            "shifts": 1, "wage_specialized_hr": 12.5,
+        },
+        "advertising": {
+            "institutional": 25000,
+            "direct": {
+                "p1": {"ue": 25, "nafta": 25, "internet": 20},
+                "p2": {"ue": 25, "nafta": 25, "internet": 20},
+                "p3": {"ue": 25, "nafta": 25, "internet": 20},
+            },
+        },
+        "financials": {
+            "revenue": 3457758, "cogs": 2092874, "gross_margin": 1364884,
+            "admin_expenses": 1479998, "depreciation": 123061, "tax_payable": 0,
+            "net_income": -240890, "insurance_indemnity": 0,
+            "financial_income": 0, "financial_expense": 2715,
+        },
+        "balance_sheet": {
+            "fixed_assets": 450000, "machines": 5499116, "non_current_assets": 5949116,
+            "product_inventory": 15113, "material_inventory": 1910876,
+            "clients": 1992186, "bank_deposits": 0, "other_financial_assets": 0,
+            "total_assets": 9867291,
+            "taxes_payable": 0, "suppliers": 2019670, "overdraft": 258314,
+            "unsecured_loans": 0, "current_liabilities": 2277984,
+            "medium_term_loans": 0, "equity_capital": 5000000,
+            "retained_earnings": 2589307, "total_equity": 7589307,
+        },
+        "cash_flow": {
+            "client_receipts": 3298376, "supplier_payments": 3996789, "tax_paid": 215108,
+            "operating_cf": -913521, "investment_cf": -700000,
+            "overdraft_obtained": 258314, "interest_paid": 2715, "dividends_paid": 0,
+            "financing_cf": 255599, "net_change_cash": -1357922,
+        },
+        "economic": {
+            "gdp": {"ue": 12001, "nafta": 17238, "rest": 27334},
+            "unemployment": {"ue": 8, "nafta": 4.5},
+            "interest_rate": {"ue": 4.5, "nafta": 4.2},
+            "exchange_rate_usd_eur": 1.1,
+            "internet_access_pct": {"ue": 45, "nafta": 68, "rest": 28},
+            "raw_material_price_usd": {"current": 52992, "3months": 50967, "6months": 47456},
+        },
+        "credit": {"overdraft_limit": 961000, "credit_potential": 2910000},
+        "agents": {
+            "ue": {"start": 3, "lost": 0, "new": 0, "next": 3},
+            "nafta": {"start": 3, "lost": 0, "new": 0, "next": 3},
+            "internet": {"start": 1, "lost": 0, "new": 0, "next": 1},
+        },
+    },
+    "Q2": {
+        "year": 2017, "quarter": 3,
+        "prices": {
+            "p1": {"ue": 290, "nafta": 290, "internet": 290},
+            "p2": {"ue": 420, "nafta": 420, "internet": 415},
+            "p3": {"ue": 810, "nafta": 825, "internet": 810},
+        },
+        "deliveries_requested": {
+            "p1": {"ue": 1770, "nafta": 1300, "internet": 1600},
+            "p2": {"ue": 1050, "nafta": 800, "internet": 1100},
+            "p3": {"ue": 330, "nafta": 250, "internet": 400},
+        },
+        "deliveries_actual": {
+            "p1": {"ue": 1770, "nafta": 1300, "internet": 1600},
+            "p2": {"ue": 1050, "nafta": 800, "internet": 1100},
+            "p3": {"ue": 330, "nafta": 250, "internet": 400},
+        },
+        "orders": {
+            "p1": {"ue": 1750, "nafta": 1318, "internet": 1794},
+            "p2": {"ue": 1038, "nafta": 759, "internet": 1091},
+            "p3": {"ue": 370, "nafta": 274, "internet": 400},
+        },
+        "sales": {
+            "p1": {"ue": 1750, "nafta": 1300, "internet": 1610},
+            "p2": {"ue": 1038, "nafta": 759, "internet": 1091},
+            "p3": {"ue": 334, "nafta": 256, "internet": 400},
+        },
+        "production": {
+            "p1": {"ordered": 4670, "produced": 4836, "rejected": 166, "lost": 0},
+            "p2": {"ordered": 2950, "produced": 3065, "rejected": 115, "lost": 0},
+            "p3": {"ordered": 980, "produced": 1014, "rejected": 34, "lost": 0},
+        },
+        "machines": {"available": 20, "next_quarter": 24},
+        "assembly": {
+            "hours_available": 31164, "absenteeism": 412, "hours_used": 24269,
+            "assembly_times": {"p1": 120, "p2": 165, "p3": 365},
+        },
+        "machining": {
+            "hours_available": 11760, "downtime": 47, "hours_used": 11386,
+            "maintenance_hours": 553, "efficiency_pct": 93.9,
+        },
+        "raw_material": {
+            "initial_inventory": 13673, "purchased_current": 5000,
+            "purchased_emergency": 0, "lost": 0, "used": 14008, "final_inventory": 4665,
+        },
+        "hr": {
+            "specialized": {"start": 53, "recruited": 0, "trained": 2, "fired": 0, "quit": 0, "available_next": 55},
+            "non_specialized": {"start": 74, "recruited": 6, "fired": 0, "quit": 6, "available_next": 74},
+            "shifts": 1, "wage_specialized_hr": 12.5,
+        },
+        "advertising": {
+            "institutional": 30000,
+            "direct": {
+                "p1": {"ue": 30, "nafta": 30, "internet": 25},
+                "p2": {"ue": 30, "nafta": 30, "internet": 25},
+                "p3": {"ue": 30, "nafta": 30, "internet": 30},
+            },
+        },
+        "financials": {
+            "revenue": 3392839, "cogs": 1729840, "gross_margin": 1662999,
+            "admin_expenses": 1544106, "depreciation": 154973, "tax_payable": 0,
+            "net_income": -71085, "insurance_indemnity": 0,
+            "financial_income": 0, "financial_expense": 35005,
+        },
+        "balance_sheet": {
+            "fixed_assets": 450000, "machines": 6394143, "non_current_assets": 6844143,
+            "product_inventory": 17106, "material_inventory": 1960781,
+            "clients": 1911922, "bank_deposits": 0, "other_financial_assets": 0,
+            "total_assets": 10733952,
+            "taxes_payable": 0, "suppliers": 1003142, "overdraft": 973955,
+            "unsecured_loans": 1238633, "current_liabilities": 3215730,
+            "medium_term_loans": 0, "equity_capital": 5000000,
+            "retained_earnings": 2518222, "total_equity": 7518222,
+        },
+        "cash_flow": {
+            "client_receipts": 3473103, "supplier_payments": 4342372, "tax_paid": 0,
+            "operating_cf": -869269, "investment_cf": -1050000,
+            "overdraft_obtained": 973955, "interest_paid": 35005, "dividends_paid": 0,
+            "financing_cf": 938950, "net_change_cash": -980319,
+        },
+        "economic": {
+            "gdp": {"ue": 12001, "nafta": 17200, "rest": 27334},
+            "unemployment": {"ue": 8, "nafta": 4.5},
+            "interest_rate": {"ue": 4.5, "nafta": 4.2},
+            "exchange_rate_usd_eur": 1.1,
+            "internet_access_pct": {"ue": 46, "nafta": 69, "rest": 28},
+            "raw_material_price_usd": {"current": 53032, "3months": 51087, "6months": 47536},
+        },
+        "credit": {"overdraft_limit": 1932000, "credit_potential": 1688000},
+        "agents": {
+            "ue": {"start": 3, "lost": 1, "new": 4, "next": 6},
+            "nafta": {"start": 3, "lost": 1, "new": 4, "next": 6},
+            "internet": {"start": 1, "lost": 0, "new": 0, "next": 1},
+        },
+    },
+    "Q3": {
+        "year": 2017, "quarter": 4,
+        "prices": {
+            "p1": {"ue": 280, "nafta": 280, "internet": 280},
+            "p2": {"ue": 400, "nafta": 400, "internet": 395},
+            "p3": {"ue": 760, "nafta": 760, "internet": 760},
+        },
+        "deliveries_requested": {
+            "p1": {"ue": 1850, "nafta": 1350, "internet": 1850},
+            "p2": {"ue": 1100, "nafta": 850, "internet": 1100},
+            "p3": {"ue": 420, "nafta": 260, "internet": 420},
+        },
+        "deliveries_actual": {
+            "p1": {"ue": 1850, "nafta": 1350, "internet": 1850},
+            "p2": {"ue": 1100, "nafta": 850, "internet": 1100},
+            "p3": {"ue": 420, "nafta": 260, "internet": 420},
+        },
+        "orders": {
+            "p1": {"ue": 1833, "nafta": 1367, "internet": 1963},
+            "p2": {"ue": 1093, "nafta": 808, "internet": 1162},
+            "p3": {"ue": 415, "nafta": 296, "internet": 448},
+        },
+        "sales": {
+            "p1": {"ue": 1833, "nafta": 1350, "internet": 1850},
+            "p2": {"ue": 1093, "nafta": 808, "internet": 1100},
+            "p3": {"ue": 415, "nafta": 260, "internet": 420},
+        },
+        "production": {
+            "p1": {"ordered": 5050, "produced": 5181, "rejected": 170, "lost": 0},
+            "p2": {"ordered": 3050, "produced": 3144, "rejected": 113, "lost": 0},
+            "p3": {"ordered": 1100, "produced": 1131, "rejected": 36, "lost": 0},
+        },
+        "machines": {"available": 24, "next_quarter": 26},
+        "assembly": {
+            "hours_available": 31404, "absenteeism": 406, "hours_used": 29759,
+            "assembly_times": {"p1": 118, "p2": 160, "p3": 360},
+        },
+        "machining": {
+            "hours_available": 14112, "downtime": 56, "hours_used": 13780,
+            "maintenance_hours": 663, "efficiency_pct": 94.5,
+        },
+        "raw_material": {
+            "initial_inventory": 9665, "purchased_current": 5000,
+            "purchased_emergency": 0, "lost": 0, "used": 14456, "final_inventory": 209,
+        },
+        "hr": {
+            "specialized": {"start": 55, "recruited": 5, "trained": 3, "fired": 0, "quit": 0, "available_next": 63},
+            "non_specialized": {"start": 74, "recruited": 6, "fired": 0, "quit": 6, "available_next": 74},
+            "shifts": 1, "wage_specialized_hr": 12.5,
+        },
+        "advertising": {
+            "institutional": 30000,
+            "direct": {
+                "p1": {"ue": 30, "nafta": 30, "internet": 25},
+                "p2": {"ue": 30, "nafta": 30, "internet": 25},
+                "p3": {"ue": 30, "nafta": 30, "internet": 30},
+            },
+        },
+        "financials": {
+            "revenue": 3487180, "cogs": 1912422, "gross_margin": 1574758,
+            "admin_expenses": 1476270, "depreciation": 186733, "tax_payable": 0,
+            "net_income": -133063, "insurance_indemnity": 0,
+            "financial_income": 0, "financial_expense": 44818,
+        },
+        "balance_sheet": {
+            "fixed_assets": 450000, "machines": 6557410, "non_current_assets": 7007410,
+            "product_inventory": 28768, "material_inventory": 108780,
+            "clients": 1882816, "bank_deposits": 0, "other_financial_assets": 0,
+            "total_assets": 9027774,
+            "taxes_payable": 0, "suppliers": 611736, "overdraft": 1031479,
+            "unsecured_loans": 0, "current_liabilities": 1643215,
+            "medium_term_loans": 0, "equity_capital": 5000000,
+            "retained_earnings": 2385159, "total_equity": 7384559,
+        },
+        "cash_flow": {
+            "client_receipts": 3521245, "supplier_payments": 3773782, "tax_paid": 0,
+            "operating_cf": -252537, "investment_cf": -350000,
+            "overdraft_obtained": 1031479, "interest_paid": 44818, "dividends_paid": 0,
+            "financing_cf": -251972, "net_change_cash": -854509,
+        },
+        "economic": {
+            "gdp": {"ue": 12001, "nafta": 17200, "rest": 27334},
+            "unemployment": {"ue": 8, "nafta": 4.5},
+            "interest_rate": {"ue": 4.5, "nafta": 4.2},
+            "exchange_rate_usd_eur": 1.1,
+            "internet_access_pct": {"ue": 47, "nafta": 70, "rest": 29},
+            "raw_material_price_usd": {"current": 53072, "3months": 51127, "6months": 47616},
+        },
+        "credit": {"overdraft_limit": 1887000, "credit_potential": 1386000},
+        "agents": {
+            "ue": {"start": 6, "lost": 0, "new": 0, "next": 6},
+            "nafta": {"start": 6, "lost": 0, "new": 0, "next": 6},
+            "internet": {"start": 1, "lost": 0, "new": 0, "next": 1},
+        },
+    },
+    "Q4": {
+        "year": 2018, "quarter": 1,
+        "prices": {
+            "p1": {"ue": 275, "nafta": 275, "internet": 275},
+            "p2": {"ue": 390, "nafta": 390, "internet": 390},
+            "p3": {"ue": 740, "nafta": 740, "internet": 740},
+        },
+        "deliveries_requested": {
+            "p1": {"ue": 1900, "nafta": 1400, "internet": 2000},
+            "p2": {"ue": 1120, "nafta": 840, "internet": 1250},
+            "p3": {"ue": 430, "nafta": 290, "internet": 450},
+        },
+        "deliveries_actual": {
+            "p1": {"ue": 1900, "nafta": 1400, "internet": 2000},
+            "p2": {"ue": 1120, "nafta": 840, "internet": 1250},
+            "p3": {"ue": 430, "nafta": 290, "internet": 450},
+        },
+        "orders": {
+            "p1": {"ue": 1896, "nafta": 1408, "internet": 2066},
+            "p2": {"ue": 1126, "nafta": 830, "internet": 1266},
+            "p3": {"ue": 434, "nafta": 302, "internet": 464},
+        },
+        "sales": {
+            "p1": {"ue": 1896, "nafta": 1400, "internet": 2000},
+            "p2": {"ue": 1120, "nafta": 830, "internet": 1250},
+            "p3": {"ue": 430, "nafta": 290, "internet": 450},
+        },
+        "production": {
+            "p1": {"ordered": 5300, "produced": 5487, "rejected": 178, "lost": 0},
+            "p2": {"ordered": 3210, "produced": 3307, "rejected": 118, "lost": 0},
+            "p3": {"ordered": 1170, "produced": 1212, "rejected": 38, "lost": 0},
+        },
+        "machines": {"available": 26, "next_quarter": 26},
+        "assembly": {
+            "hours_available": 31188, "absenteeism": 411, "hours_used": 30290,
+            "assembly_times": {"p1": 115, "p2": 155, "p3": 355},
+        },
+        "machining": {
+            "hours_available": 15288, "downtime": 59, "hours_used": 14898,
+            "maintenance_hours": 717, "efficiency_pct": 94.8,
+        },
+        "raw_material": {
+            "initial_inventory": 5209, "purchased_current": 10000,
+            "purchased_emergency": 0, "lost": 0, "used": 15006, "final_inventory": 203,
+        },
+        "hr": {
+            "specialized": {"start": 63, "recruited": 0, "trained": 3, "fired": 0, "quit": 0, "available_next": 66},
+            "non_specialized": {"start": 74, "recruited": 6, "fired": 0, "quit": 6, "available_next": 74},
+            "shifts": 1, "wage_specialized_hr": 12.5,
+        },
+        "advertising": {
+            "institutional": 30000,
+            "direct": {
+                "p1": {"ue": 30, "nafta": 30, "internet": 25},
+                "p2": {"ue": 30, "nafta": 30, "internet": 25},
+                "p3": {"ue": 30, "nafta": 30, "internet": 30},
+            },
+        },
+        "financials": {
+            "revenue": 3570784, "cogs": 1958600, "gross_margin": 1612184,
+            "admin_expenses": 1501846, "depreciation": 186733, "tax_payable": 0,
+            "net_income": -120746, "insurance_indemnity": 0,
+            "financial_income": 0, "financial_expense": 44349,
+        },
+        "balance_sheet": {
+            "fixed_assets": 450000, "machines": 6370677, "non_current_assets": 6820677,
+            "product_inventory": 16750, "material_inventory": 105652,
+            "clients": 1942032, "bank_deposits": 0, "other_financial_assets": 0,
+            "total_assets": 8885111,
+            "taxes_payable": 0, "suppliers": 621168, "overdraft": 999530,
+            "unsecured_loans": 0, "current_liabilities": 1620698,
+            "medium_term_loans": 0, "equity_capital": 5000000,
+            "retained_earnings": 2264413, "total_equity": 7264413,
+        },
+        "cash_flow": {
+            "client_receipts": 3522568, "supplier_payments": 3543340, "tax_paid": 0,
+            "operating_cf": -20772, "investment_cf": 0,
+            "overdraft_obtained": 999530, "interest_paid": 44349, "dividends_paid": 0,
+            "financing_cf": -76298, "net_change_cash": -97070,
+        },
+        "economic": {
+            "gdp": {"ue": 12001, "nafta": 17200, "rest": 27334},
+            "unemployment": {"ue": 8.5, "nafta": 5.0},
+            "interest_rate": {"ue": 4.5, "nafta": 4.2},
+            "exchange_rate_usd_eur": 1.1,
+            "internet_access_pct": {"ue": 48, "nafta": 71, "rest": 30},
+            "raw_material_price_usd": {"current": 53113, "3months": 51167, "6months": 47656},
+        },
+        "credit": {"overdraft_limit": 1821000, "credit_potential": 1174000},
+        "agents": {
+            "ue": {"start": 6, "lost": 0, "new": 0, "next": 6},
+            "nafta": {"start": 6, "lost": 0, "new": 0, "next": 6},
+            "internet": {"start": 1, "lost": 0, "new": 0, "next": 1},
+        },
+    },
+    "Q5": {
+        "year": 2018, "quarter": 2,
+        "prices": {
+            "p1": {"ue": 270, "nafta": 270, "internet": 270},
+            "p2": {"ue": 380, "nafta": 380, "internet": 380},
+            "p3": {"ue": 730, "nafta": 730, "internet": 730},
+        },
+        "deliveries_requested": {
+            "p1": {"ue": 1970, "nafta": 1430, "internet": 2160},
+            "p2": {"ue": 1170, "nafta": 850, "internet": 1300},
+            "p3": {"ue": 430, "nafta": 320, "internet": 470},
+        },
+        "deliveries_actual": {
+            "p1": {"ue": 1936, "nafta": 1405, "internet": 2124},
+            "p2": {"ue": 1154, "nafta": 838, "internet": 1283},
+            "p3": {"ue": 430, "nafta": 320, "internet": 470},
+        },
+        "orders": {
+            "p1": {"ue": 1970, "nafta": 1430, "internet": 2160},
+            "p2": {"ue": 1170, "nafta": 850, "internet": 1300},
+            "p3": {"ue": 430, "nafta": 320, "internet": 470},
+        },
+        "sales": {
+            "p1": {"ue": 1936, "nafta": 1405, "internet": 2124},
+            "p2": {"ue": 1154, "nafta": 838, "internet": 1283},
+            "p3": {"ue": 430, "nafta": 320, "internet": 470},
+        },
+        "production": {
+            "p1": {"ordered": 5560, "produced": 5749, "rejected": 189, "lost": 95},
+            "p2": {"ordered": 3320, "produced": 3439, "rejected": 119, "lost": 45},
+            "p3": {"ordered": 1220, "produced": 1260, "rejected": 40, "lost": 0},
+        },
+        "machines": {"available": 26, "next_quarter": 26},
+        "assembly": {
+            "hours_available": 32340, "absenteeism": 432, "hours_used": 31461,
+            "assembly_times": {"p1": 113, "p2": 152, "p3": 352},
+        },
+        "machining": {
+            "hours_available": 15288, "downtime": 119, "hours_used": 14898,
+            "maintenance_hours": 717, "efficiency_pct": 94.8,
+        },
+        "raw_material": {
+            "initial_inventory": 5203, "purchased_current": 10000,
+            "purchased_emergency": 0, "lost": 0, "used": 14432, "final_inventory": 771,
+        },
+        "hr": {
+            "specialized": {"start": 66, "recruited": 0, "trained": 3, "fired": 0, "quit": 0, "available_next": 69},
+            "non_specialized": {"start": 74, "recruited": 6, "fired": 0, "quit": 6, "available_next": 74},
+            "shifts": 1, "wage_specialized_hr": 12.5,
+        },
+        "advertising": {
+            "institutional": 25000,
+            "direct": {
+                "p1": {"ue": 25, "nafta": 25, "internet": 25},
+                "p2": {"ue": 25, "nafta": 25, "internet": 25},
+                "p3": {"ue": 25, "nafta": 25, "internet": 25},
+            },
+        },
+        "financials": {
+            "revenue": 3667270, "cogs": 1982699, "gross_margin": 1684571,
+            "admin_expenses": 1583141, "depreciation": 186733, "tax_payable": 0,
+            "net_income": -130927, "insurance_indemnity": 34024,
+            "financial_income": 0, "financial_expense": 44347,
+        },
+        "balance_sheet": {
+            "fixed_assets": 450000, "machines": 6250871, "non_current_assets": 6700871,
+            "product_inventory": 0, "material_inventory": 770935,
+            "clients": 2014732, "bank_deposits": 0, "other_financial_assets": 0,
+            "total_assets": 9486538,
+            "taxes_payable": 0, "suppliers": 625236, "overdraft": 1726015,
+            "unsecured_loans": 0, "current_liabilities": 2351251,
+            "medium_term_loans": 0, "equity_capital": 5000000,
+            "retained_earnings": 2135287, "total_equity": 7135287,
+        },
+        "cash_flow": {
+            "client_receipts": 3737940, "supplier_payments": 3304459, "tax_paid": 0,
+            "operating_cf": 467505, "investment_cf": 0,
+            "overdraft_obtained": 1726015, "interest_paid": 44347, "dividends_paid": 0,
+            "financing_cf": 1681668, "net_change_cash": 2149173,
+        },
+        "economic": {
+            "gdp": {"ue": 12001, "nafta": 17200, "rest": 27334},
+            "unemployment": {"ue": 9.0, "nafta": 5.5},
+            "interest_rate": {"ue": 4.5, "nafta": 4.2},
+            "exchange_rate_usd_eur": 1.1,
+            "internet_access_pct": {"ue": 49, "nafta": 72, "rest": 31},
+            "raw_material_price_usd": {"current": 53153, "3months": 51207, "6months": 47736},
+        },
+        "credit": {"overdraft_limit": 1821000, "credit_potential": 1174000},
+        "agents": {
+            "ue": {"start": 6, "lost": 0, "new": 0, "next": 6},
+            "nafta": {"start": 6, "lost": 0, "new": 0, "next": 6},
+            "internet": {"start": 1, "lost": 0, "new": 0, "next": 1},
+        },
+    },
+}

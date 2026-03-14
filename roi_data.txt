@@ -1,0 +1,7 @@
+--- Analysis of Q1 vs Q5 ---
+Product 1 : Demand changed by 20.1%, Price changed by -8.5%. Price Elasticity: -2.37
+Product 2 : Demand changed by 14.1%, Price changed by -10.6%. Price Elasticity: -1.33
+Product 3 : Demand changed by 20.8%, Price changed by -10.4%. Price Elasticity: -1.99
+
+--- Marketing ROI Estimate ---
+Marketing spend remained mostly constant per region/product baseline (25k), but cumulative branding impacts demand. ROI modeled dynamically in Q6 predictor.
